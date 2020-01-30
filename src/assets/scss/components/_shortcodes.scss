@@ -1,0 +1,95 @@
+.entry-content {
+	.fast-facts {
+		width: 100%;
+		background: #F5F5F5;
+		margin-top: 32px;
+		padding: rem-calc(31 23 45 23);
+		h3 {
+			font-size: 18px;
+			line-height: 26px;
+			text-align: left;
+			font-weight: 300;
+		}
+	}
+	.featured-offers {
+	    margin: rem-calc(42 0 30 0);
+	    display: inline-block;
+		.single-slide {
+		    min-height: 438px;
+			width: 48%;
+			display: block;
+			border-top: 5px solid get-color(primary);
+			position: relative;
+			background-repeat: no-repeat !important;
+			background-size: cover !important;
+			background-position: center !important;
+			&:nth-child(odd){
+			    float: left;
+		    }
+		    &:nth-child(even){
+			    float: right;
+		    }
+			.slider-new-label {
+				height: 57px;
+			    width: 57px;
+			    border: 4px solid #FFFFFF;
+			    background-color: #BFF933;
+			    border-radius: 50%;
+			    display: block;
+			    position: absolute;
+			    right: -25px;
+			    top: -25px;
+			    z-index: 9999;
+			    text-align: center;
+			    padding: 14px 0px;
+			    color: #2d2d2d;
+			    font-size: 14px;
+			    font-weight: bold;
+			}
+			.slide-title {
+				color: $dark-gray;
+				font-size: 32px;	
+				line-height: 36px;	
+				text-align: center;
+				font-weight: inherit;
+				padding: 0 20px;
+				p {
+					line-height: 36px;
+					font-weight: 300;
+				}
+			}
+			.slide-subtitle {
+				color: #0D68B6;
+				font-size: 18px;	
+				font-weight: bold;	
+				line-height: 26px;	
+				text-align: center;
+			}
+			.slide-logo-row {
+				padding: 0 20px;
+				margin-top: 23px;
+			    display: inline-block;
+			    width: 100%;
+				.tenants-slider-logo {
+					width: 100px;
+					float: left;
+				}
+				.fs-slider-logo {
+					width: 68px;
+					float: right;
+				}
+			}
+		}
+	}
+	.download-seperator {
+	    font-weight: bold;
+		padding-bottom: 36px;
+		margin-bottom: 27px;
+		border-bottom: 1px solid #E3E3E3;
+		.return-to-top {
+			color: get-color(primary);
+			float: right;
+			cursor: pointer;
+		}
+	}
+}

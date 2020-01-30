@@ -1,0 +1,22 @@
+.ttv-breadcrumbs {
+	line-height: rem-calc(22);
+	max-width: 1256px;
+	padding-left: 28px;
+	padding-right: 28px;
+	margin: rem-calc(6 auto 0 auto);
+	.breadcrumbs-link {
+		font-size: rem-calc(14);
+		color: get-color(primary);
+	}
+	.breadcrumbs-separator {
+		font-size: rem-calc(14);
+		color: #212121;
+		opacity: 0.4;
+	    margin: 0 10px
+	}
+	.breadcrumbs-current-page {
+		font-size: rem-calc(14);
+		color: #212121;
+		opacity: 0.6;
+	}
+}

@@ -1,0 +1,161 @@
+.footer-container {
+  margin: 0 auto;
+  padding-bottom: 70px;
+	.footer {
+		@include xy-grid-container;
+		@include xy-grid;
+		padding: rem-calc(30) 0;
+		margin-bottom: 25px;
+		section {
+		@include xy-cell(auto);
+		}
+		.ttv-footer-logo {
+			width: 378px;
+		}
+		.footer-logos-container {
+			img {
+				&:first-of-type {
+					width: 116px;
+				}
+				&:nth-of-type(2) {
+					width: 83px;
+				}
+			}	
+		}
+		.vertical-mobile-logo {
+			display: none;
+		}
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+		
+		.cell {
+			text-align: center;
+			.footer-logos-container {
+				p {
+					text-align: right;
+					font-weight: bold;
+				}
+			}
+			.ttv-footer-logo {
+				margin-top: 20px;
+			}
+			.socials-heading {
+				margin-bottom: 10px;
+				font-weight: bold;
+			}
+			.footer-socials-container {
+				img {
+					margin-right: 4px;
+					width: 40px;
+				}
+			}
+		}
+		.logos-cell {
+			text-align: right;
+		}
+	}
+	.footer-logos-container-mobile {
+		display: none;
+	}
+	.footer-top-menu, .footer-bottom-menu {
+		.menu {
+			justify-content: center;
+			li {
+				a {
+					color: $dark-gray;
+				}
+				&.current-menu-item {
+					a {
+						background: none !important;
+					}
+				}
+			}
+		}
+	}
+	.footer-bottom-menu {
+		margin: 10px 0;
+		.menu {
+			li {
+				a {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+	.ttv-copyright {
+		text-align: center;
+		font-size: 13px;
+		color: $black;
+		opacity: 0.5;
+	}
+	@include breakpoint(medium only) {
+		    padding-bottom: 38px;
+		    .footer {
+			    padding: 30px 13px;
+				margin-bottom: 0;
+				.cell {
+					&:nth-of-type(1), &:nth-of-type(4) {
+						margin-top: 100px;
+					}
+				}
+		    }
+		    .footer-bottom-menu {
+			    margin-bottom: 0px;
+		    }
+	}
+	@include breakpoint(small only) {
+		.footer {
+			padding-bottom: 0 !important;
+			.cell:first-of-type, .logos-cell {
+				display: none;
+			}
+			.vertical-mobile-logo {
+				display: block;
+			}
+			.vertical-mobile-logo {
+				img {
+					width: 271px;
+					margin-top: 23px;
+				}
+			}
+		}
+		.footer-top-menu {
+			ul {
+				li {
+					display: block;
+					width: 100%;
+					text-align: center;
+					font-weight: bold;
+				}
+			}
+		}
+		.footer-logos-container-mobile {
+			display: block;
+			text-align: center;
+			margin: 25px 0 40px 0;
+			p {
+				font-weight: bold;
+			}
+			img:first-of-type {
+				width: 116px;
+				margin-right: 28px;
+			}
+			img:nth-of-type(2){
+			    width: 83px;
+			}
+		}
+		.footer-bottom-menu {
+			ul {
+				li {
+					display: block;
+					width: 100%;
+					text-align: center;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

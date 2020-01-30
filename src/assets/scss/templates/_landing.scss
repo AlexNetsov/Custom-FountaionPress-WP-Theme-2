@@ -1,0 +1,121 @@
+.page-template-page-landing{
+	.ttv-breadcrumbs-container {
+		background: #f5f5f5;
+		.ttv-breadcrumbs {
+			padding-top: 20px;
+			margin-top: 0;
+		}
+	}
+	.landing-top-section {
+		margin-bottom: 0;
+		background: #f5f5f5;
+		h1.entry-title {
+			padding-top: rem-calc(32);
+			text-align: center;
+			font-size: rem-calc(58);
+			line-height: rem-calc(58);
+			
+		}
+		.subheading {
+			text-align: center;
+			font-weight: normal;
+			margin-top: rem-calc(35);
+		}
+		.top-excerpt {
+			font-size: rem-calc(18);
+			text-align: center;
+			margin: 17px auto;
+			max-width: 1100px;
+			font-size: 16px;
+			line-height: 28px;
+		}
+	}
+	.landing-top-bg {
+		height: 91px;
+	}
+	@include breakpoint(medium only) {
+		.ttv-breadcrumbs-container{
+			display: none;
+		}
+		.landing-top-section {
+			h1.entry-title {
+				font-size: 42px;
+				line-height: 52px;
+				
+			}
+			.subheading{
+				font-size: 21px;
+				line-height: 32px;
+				padding: 0 28px;
+			}
+			.top-excerpt {
+				font-size: 16px;
+				line-height: 21px;
+				padding: 0 28px;
+			}
+		}
+	}	
+	@include breakpoint(small only) {
+		.ttv-breadcrumbs-container{
+			display: none;
+		}
+		.landing-top-section {
+			h1.entry-title {
+				font-size: 38px;
+				line-height: 48px;
+				text-align: left;
+				padding: 15px 16px;
+				margin-bottom: 0;
+			}
+			.subheading{
+				font-size: 18px;
+				line-height: 28px;
+				padding: 0 16px;
+			    text-align: left;
+				margin-top: 0;
+			}
+			.top-excerpt {
+				font-size: 13px;
+				line-height: 24px;
+				padding: 0 16px;
+			    margin-top: 3px;
+				text-align: left;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.main-wrap {
+	margin-top: 0;
+	article {
+		.entry-content {
+			.landing-sign-up-row {
+				min-height: 350px !important;
+				margin-top: 20px !important;
+				.vc_row.wpb_row.vc_inner {
+					padding-top: rem-calc(30);
+				    max-width: 80%;
+					margin: auto;
+					&>.wpb_column {
+						p{
+							margin-bottom: 5px !important;
+							&:before {
+								content: '';
+								display: inline-block;
+								width: 26px;
+								height: 19px;
+								background: url('../images/white-tick.png');
+								background-size: contain !important;
+								background-repeat: no-repeat !important;
+								margin-right: 15px;
+							}
+						}
+					}
+				}
+				.ttv-form-button {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}
